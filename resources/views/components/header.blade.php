@@ -11,7 +11,7 @@
                                 <h1 class="display-3 text-white animated mb-4 slideInDown">Want to help save lives?</h1>
                                 <!-- button -->
                                 <a href="doner.php" class="btn btn-primary py-md-3 px-md-5 animated slideInRight me-3">Become a Donar</a>
-                                <a href="blood-search.php" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Need A Donar</a>
+                                <a href="/blood-search" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Need A Donar</a>
                             </div>
                         </div>
                     </div>

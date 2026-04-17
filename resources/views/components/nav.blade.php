@@ -1,7 +1,7 @@
 <div class="container-fluid bg-dark px-0">
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
-                    <a href="index.php" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center" id="bottom-icon">
+                    <a href="/home" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center" id="bottom-icon">
                         <h1 class="m-0 text-primary text-uppercase" style="font-size: 25px;">LPI Blood Bank
                             <span style="font-size: 9px;" class="d-block">Lakshmipur Polytechnic Institute</span>
                         </h1>
@@ -60,7 +60,7 @@
                         <!-- menu-items -->
                         <div class="collapse navbar-collapse justify-content-between" id="navs">
                             <div class="navbar-nav me-auto py-0 text-uppercase">
-                                <a href="index.php" class="nav-link nav-item active">Home</a>
+                                <a href="/home" class="nav-link nav-item active">Home</a>
                                 <div class="dropdown nav-item">
                                 <a class="nav-link dropdown-toggle" id="dropdown" data-bs-toggle="dropdown">Donar List</a>
                                     <div class="dropdown-menu rounded-0 m-0" >
@@ -75,16 +75,16 @@
                                     </div>
                                 </div>
 
-                                <a href="rules.php" class="nav-link nav-item">Rules</a>
-                                <a href="blog.php" class="nav-link nav-item">Blogs</a>
+                                <a href="/rules" class="nav-link nav-item">Rules</a>
+                                <a href="/blog" class="nav-link nav-item">Blogs</a>
 
-                                <a href="about.php" class="nav-link nav-item ">About</a>
-                                <a href="contact.php" class="nav-link nav-item">Contact</a>
-                                <a href="login.php" class="nav-link nav-item">Login</a>
+                                <a href="/about" class="nav-link nav-item ">About</a>
+                                <a href="/contact" class="nav-link nav-item">Contact</a>
+                                <a href="/" class="nav-link nav-item">Login</a>
                             </div>
 
                             <!-- button -->
-                            <a href="blood-search.php" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">
+                            <a href="/blood-search" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">
                                 Search For Blood <i class="fa fa-arrow-right ms-3"></i>
                             </a>
                         </div>

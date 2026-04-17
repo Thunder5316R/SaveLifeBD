@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\BloodSearchController;
 use Illuminate\Support\Facades\Route;
+
 
 Route::get('/', [AuthController::class, 'login'])->name('user.login');
 Route::get('/sign-up', [AuthController::class, 'signup'])->name('user.signup');
@@ -14,8 +16,23 @@ Route::middleware('userAccess')->group(function () {
 });
 
 
-
 Route::get('/test', function(){
     return view('index');
 });
+
+Route::get('/blood-search', [BloodSearchController::class, 'search'])->name('blood.search');
+
+Route::get('/rules', function() {
+    return view('rules');
+});
+Route::get('/blog', function() {
+    return view('blog');
+});
+Route::get('/about', function() {
+    return view('about');
+});
+Route::get('/contact', function() {
+    return view('contact');
+});
+
 

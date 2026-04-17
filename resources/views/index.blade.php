@@ -2,7 +2,7 @@
 @section('title', 'HOME')
 
 @section('header')
-        @include('components.header')
+@include('components.header')
 @endsection
 
 @section('content')
