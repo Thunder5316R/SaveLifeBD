@@ -22,15 +22,24 @@ class UserFactory extends Factory
      * @return array<string, mixed>
      */
     public function definition(): array
-    {
-        return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'password' => static::$password ??= Hash::make('password'),
-            'remember_token' => Str::random(10),
-        ];
-    }
+{
+    return [
+        'name' => fake()->name(),
+        'email' => fake()->unique()->safeEmail(),
+        'phone' => fake()->phoneNumber(),
+        'optional_number' => fake()->phoneNumber(),
+        'present_address' => fake()->address(),
+        'blood_group' => fake()->randomElement(['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-']),
+        'weight' => fake()->numberBetween(50, 100),
+        'last_blood_donate' => fake()->optional()->date(),
+        'email_verify' => 1,
+        'status' => 1,
+        'blood_donate_number' => fake()->numberBetween(0, 10),
+        'password' => bcrypt('password'), // ডিফল্ট পাসওয়ার্ড
+        'email_verified_at' => now(),
+        'remember_token' => Str::random(10),
+    ];
+}
 
     /**
      * Indicate that the model's email address should be unverified.

@@ -70,8 +70,8 @@
 
                             <div class="col-md-6">
                                 <h6 class="section-title text-start text-primary text-uppercase mb-4">LPI Blood Blank</h6>
-                                <a href="about.php" class="btn btn-link">About Us</a>
-                                <a href="contact.php" class="btn btn-link">Contact Us</a>
+                                <a href="/about" class="btn btn-link">About Us</a>
+                                <a href="/contact" class="btn btn-link">Contact Us</a>
                                 <a href="#" class="btn btn-link">Privacy Policy</a>
                                 <a href="#" class="btn btn-link">Teams & Condition</a>
                                 <a href="#" class="btn btn-link">Support</a>
@@ -102,8 +102,8 @@
 
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="index.php">Home</a>
-                                <a href="contact.php">Contact Us</a>
+                                <a href="/home">Home</a>
+                                <a href="/contact">Contact Us</a>
                                 <a href="#">Help</a>
                                 <a href="#">FAQs</a>
                             </div>

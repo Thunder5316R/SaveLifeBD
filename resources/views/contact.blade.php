@@ -93,7 +93,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 wow fadeInUp mt-4">
-                        <a href="doner.php" class="btn btn-primary w-100">Become a Donor</a>
+                        <a href="/sign-up" class="btn btn-primary w-100">Become a Donor</a>
                     </div>
                 </div>
             </div>

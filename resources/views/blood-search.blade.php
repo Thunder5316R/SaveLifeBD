@@ -16,6 +16,16 @@
             </marquee>
         </div>
     </div>
+    {{-- AI Recommendation Banner --}}
+<div class="container mb-3">
+    <div class="alert alert-danger d-flex align-items-center justify-content-between" style="border-radius:12px;">
+        <div>
+            <strong>🤖 Try AI Recommendation!</strong>
+            Smart donor matching by blood group, location & eligibility.
+        </div>
+        <a href="{{ route('blood.recommend') }}" class="btn btn-danger btn-sm">Use AI →</a>
+    </div>
+</div>
 
     <section class="contact-us pb-3">
         <div class="container">

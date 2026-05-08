@@ -43,8 +43,8 @@
                         <h6 class="section-title text-start text-white text-uppercase mb-3">One Video For Me</h6>
                         <h1 class="text-white mb-4">What do you want to know about our work?</h1>
                         <p class="text-white mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <a href="doner.html" class="btn d-lg-inline-block d-none btn-primary py-md-3 px-md-4 px-lg-5 me-3 problem-btn">Become a Donar</a>
-                        <a href="contact.html" class="btn btn-light py-md-3 px-md-4 px-lg-5 mt-md-4 mt-lg-0">Contact Us</a>
+                        <a href="/sign-up" class="btn d-lg-inline-block d-none btn-primary py-md-3 px-md-4 px-lg-5 me-3 problem-btn">Become a Donar</a>
+                        <a href="/contact" class="btn btn-light py-md-3 px-md-4 px-lg-5 mt-md-4 mt-lg-0">Contact Us</a>
                     </div>
                 </div>
 

@@ -7,6 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicon -->
     <link href="{{ asset('blood-donation.png') }}" rel="icon">
@@ -31,6 +32,16 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    {{-- laravel er jonno --}}
+
+    
+<link href="{{ asset('lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+<link href="{{ asset('lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" />
+
+<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+
+<link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <style>
         /* Google Translate top banner hide */
         iframe.goog-te-banner-frame {
@@ -58,7 +69,7 @@
 
 
    <!-- =============== add-page-Preloader ============== -->
-   <div id="loading"></div>
+   {{-- <div id="loading"></div> --}}
     
     <div class="container-xxl bg-white p-0 index">
 
@@ -122,6 +133,7 @@
 
     </script>
     @stack('scripts')
+    @include('widget')
 </body>
 
 </html>

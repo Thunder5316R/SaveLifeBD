@@ -59,8 +59,8 @@
                         <h1 class="text-white mb-4">Blood donation is voluntary, <span>free</span> and <span>safe</span>!</h1>
                         <p class="text-white mb-4">If you want to go for blood donation, first talk to the patient's relative... After knowing the name of the hospital, cabin/ward number, go directly to that cabin/ward... Blood applicant somewhere other than the hospital/clinic (the person you are contacting on the mobile number). Don't meet him... in the alley next to the hospital, or even ask him to meet him in a shop... not even at the patient's home...</p>
                         <p class="text-white mb-4">Know the cabin/ward number, go directly to the cabin/ward... see the patient... Then donating blood... inform the patient and patient's relatives that you are donating blood for free... this will not give the hospital authority or any third party a chance to corrupt...<a href="img/thankyou.gif" target="_blank">Thank you!</a></p>
-                        <a href="doner.html" class="btn d-md-inline-block d-none btn-primary py-md-3 px-md-4 px-lg-5 me-3 problem-btn">Become a Donar</a>
-                        <a href="contact.html" class="btn btn-light py-md-3 px-md-4 px-lg-5 mt-md-1 mt-lg-0">Contact Us</a>
+                        <a href="/sign-up" class="btn d-md-inline-block d-none btn-primary py-md-3 px-md-4 px-lg-5 me-3 problem-btn">Become a Donar</a>
+                        <a href="/contact" class="btn btn-light py-md-3 px-md-4 px-lg-5 mt-md-1 mt-lg-0">Contact Us</a>
                     </div>
                 </div>
             </div>

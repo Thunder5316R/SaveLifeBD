@@ -61,19 +61,9 @@
                         <div class="collapse navbar-collapse justify-content-between" id="navs">
                             <div class="navbar-nav me-auto py-0 text-uppercase">
                                 <a href="/home" class="nav-link nav-item active">Home</a>
-                                <div class="dropdown nav-item">
-                                <a class="nav-link dropdown-toggle" id="dropdown" data-bs-toggle="dropdown">Donar List</a>
-                                    <div class="dropdown-menu rounded-0 m-0" >
-                                        <a href="group-search.php?group=A+" class="dropdown-item">A+ (A positive)</a>
-                                        <a href="group-search.php?group=A-" class="dropdown-item">A- (A negative)</a>
-                                        <a href="group-search.php?group=B+" class="dropdown-item">B+ (B positive)</a>
-                                        <a href="group-search.php?group=B-" class="dropdown-item">B- (B negative)</a>
-                                        <a href="group-search.php?group=O+" class="dropdown-item">O+ (O positive)</a>
-                                        <a href="group-search.php?group=O-" class="dropdown-item">O- (O negative)</a>
-                                        <a href="group-search.php?group=AB+" class="dropdown-item">AB+ (AB positive)</a>
-                                        <a href="group-search.php?group=AB-" class="dropdown-item">AB- (AB negative)</a>
-                                    </div>
-                                </div>
+                                <a href="{{ route('emergency.create') }}" class="btn btn-danger fw-bold nav-link nav-item active">
+                                    🚨 Emergency Alert
+                                </a>
 
                                 <a href="/rules" class="nav-link nav-item">Rules</a>
                                 <a href="/blog" class="nav-link nav-item">Blogs</a>

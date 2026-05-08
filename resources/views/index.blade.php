@@ -77,7 +77,7 @@
                         </div>
 
                         <!-- some-images -->
-                        <a href="about.html" class="btn btn-primary py-3 px-5 mt-2">Explore More</a>
+                        <a href="/about" class="btn btn-primary py-3 px-5 mt-2">Explore More</a>
 
                     </div>
                     <div class="col-lg-6">
@@ -117,8 +117,8 @@
                         <h6 class="section-title text-start text-white text-uppercase mb-3">Benefits of donating blood.</h6>
                         <h1 class="text-white mb-4">One Video For Blood Donation!</h1>
                         <p class="text-white mb-4">Regular blood donation reduces the risk of heart disease and heart attack.  Another study found that people who donate blood twice a year have a lower risk of developing cancer than others.  In particular, the risk of lung, liver, colon, stomach and throat cancer has been observed to be much lower in regular blood donars. <a href="#">See more...</a></p>
-                        <a href="about.php" class="btn btn-primary py-md-3 px-md-4 px-lg-5 me-3 problem-btn">About Us</a>
-                        <a href="contact.php" class="btn btn-light d-lg-inline-block d-none py-md-3 px-md-4 px-lg-5 mt-md-4 mt-lg-0">Contact Me</a>
+                        <a href="/about" class="btn btn-primary py-md-3 px-md-4 px-lg-5 me-3 problem-btn">About Us</a>
+                        <a href="/contact" class="btn btn-light d-lg-inline-block d-none py-md-3 px-md-4 px-lg-5 mt-md-4 mt-lg-0">Contact Me</a>
                     </div>
                 </div>
                 <div class="col-md-6">
