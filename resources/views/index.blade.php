@@ -16,7 +16,7 @@
 
                                 <div class="col-12">
                                     <marquee class="mb-4 bg-primary rounded" behavior="scroll">
-                                        <h4 class="p-2 text-white">(Ensure your safety. <strong>www.LPIbloodbank.com</strong> authority will not be responsible for any inconvenience.)</h4>
+                                        <h4 class="p-2 text-white">If you face any problem, please contact us. Call In this contact number: +8801745513701</h4>
                                     </marquee>
                                 </div>
                                 
@@ -35,7 +35,7 @@
                         <h6 class="section-title text-start text-primary text-uppercase">
                             About us
                         </h6>
-                        <h1 class="mb-4" style="font-size: 35px;">Welcome to <span class="text-primary text-uppercase">LPI Blood Bank</span></h1>
+                        <h1 class="mb-4" style="font-size: 35px;">Welcome to <span class="text-primary text-uppercase">Save Life BD</span></h1>
                         <p class="mb-4">Our work of LPI Blood is to serve the helpless people.  We are bringing a huge opportunity to those who cannot arrange blood for their close relatives due to lack of blood donors. <a href="about.php">see more...</a></p>
 
                         <div class="row g-3 pb-4">
@@ -44,7 +44,7 @@
                                     <div class="border rounded text-center p-3">
                                         <img src="img/icon/donor.png" class="icon-img mb-1" alt="..">
 
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                        <h2 class="mb-1" data-toggle="counter-up">756</h2>
                                         <p class="mb-0">Donar</p>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@
                                         <img src="img/icon/donator.png" class="icon-img mb-1" alt="..">
                                         
 
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                        <h2 class="mb-1" data-toggle="counter-up">1758</h2>
                                         <p class="mb-0">Blood Donated</p>
                                     </div>
                                 </div>
@@ -68,7 +68,7 @@
                                     <div class="border rounded text-center p-3">
                                         <img src="img/icon/blood-bank.png" class="icon-img mb-1" alt="..">
 
-                                        <h2 class="mb-1" data-toggle="counter-up">123</h2>
+                                        <h2 class="mb-1" data-toggle="counter-up">6</h2>
                                         <p class="mb-0">Blood Bank</p>
                                     </div>
                                 </div>
@@ -84,12 +84,12 @@
                         <div class="row g-3">
 
                             <div class="col-6 text-end">
-                                <img src="img/about-1.jpg" alt="Image" style="margin-top: 25%;" class="img-fluid rounded w-75 wow zoomIn">
+                                <img src="img/my-donated.jpg" alt="Image" style="margin-top: 25%;" class="img-fluid rounded w-75 wow zoomIn">
                             </div>
 
 
                             <div class="col-6 text-start">
-                                <img src="img/about-2.jpg" alt="Image" class="img-fluid rounded w-100 wow zoomIn">
+                                <img src="img/use1.jpeg" alt="Image" class="img-fluid rounded h-75 wow zoomIn" style="overflow: hidden">
                             </div>
                             
 
@@ -99,7 +99,7 @@
                             
 
                             <div class="col-6 text-start">
-                                <img src="img/about-4.jpg" alt="Image" class="img-fluid rounded w-75 wow zoomIn">
+                                <img src="img/use2.jpeg" alt="Image" class="img-fluid rounded w-75 wow zoomIn">
                             </div>
                             
                         </div>
@@ -186,12 +186,12 @@
                         <a href="https://www.facebook.com/socialdevelopmentsociety.bd" target="_blank" class="service-item rounded">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <img src="img/sds.jpg" alt=".." class="img-fluid rounded" style="width: 250px;">
+                                    <img src="img/bondhu.jpeg" alt=".." class="img-fluid rounded" style="width: 250px; height: 120px;">
 
                                 </div>
                             </div>
 
-                            <h5 class="mb-3">Social Development Society</h5>
+                            <h5 class="mb-3">Bondhu Mohol Blood Donation</h5>
                             <p class="text-body mb-0">
                                 My country is alert in blood donation. At the level of society, we are all at the level of the country.
                             </p>
@@ -244,7 +244,7 @@
                                 </div>
                             </div>
 
-                            <h5 class="mb-3">LPI Blood Bank</h5>
+                            <h5 class="mb-3">Save Life BD</h5>
                             <p class="text-body mb-0">
                                "Come to the bonds of brotherhood, to the welfare of humanity." 
                             </p>
@@ -282,7 +282,7 @@
 
                     <!-- 1st -->
                     <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Hi, I'm <a href="https://www.facebook.com/programmer.sohaghosen/" target="_blank">Sohag Hosen</a>. I'm a professional Web Developer. I'm study in Computer Technology  at LPI. I working in Hi-Tech IT Institute.</p>
+                        <p>This Application is very helpful for finding blood. Very good job.</p>
                         <div class="d-flex align-items-center">
                             <img src="img/Sohag.jpg" alt="images" class="img-fluid flex-shrink-0 rounded" style="width: 45px; height: 45px;">
 
@@ -298,7 +298,7 @@
 
                     <!-- 2nd -->
                     <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Hi, I'm <a href="#">Orin Akter Srity</a>. I'm a professional Frontend Developer. I'm study in Computer Technology at LPI.</p>
+                        <p>I got blood very fast through this application. Features was really useful.</p>
                         <div class="d-flex align-items-center">
                             <img src="img/orin.jpg" alt="images" class="img-fluid flex-shrink-0 rounded" style="width: 45px; height: 45px;">
 
@@ -314,7 +314,7 @@
 
                     <!-- 3rd -->
                     <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>I'm <a href="https://www.facebook.com/seenun.tasnim.7" target="_blank">Tasnim Hasan</a>, a Computer Technology graduate from LPI. I specialize in hardware engineering and Java programming.</p>
+                        <p>আমার বিপদের সময় এই অ্যাপ্লিকেশনটি আমাকে সহায়তা করেছে। খুব দ্রুতই ডোনারদের সাথে যোগাযোগ করতে পারছি।</p>
                         <div class="d-flex align-items-center">
                             <img src="img/sinan.jpg" alt="images" class="img-fluid flex-shrink-0 rounded" style="width: 45px; height: 45px;">
 
@@ -329,7 +329,7 @@
 
                     <!-- 4th -->
                     <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Hi, I'm <a href="https://www.facebook.com/profile.php?id=100088482830882" target="_blank">Sumaiya Akter Rabeya</a>. I'm a professional Web Developer. I'm study in Computer Technology at LPI.</p>
+                        <p>This application has been a lifesaver for me. It's so easy to use and the blood availability information is always up-to-date.</p>
                         <div class="d-flex align-items-center">
                             <img src="img/sumaiya.jpg" alt="images" class="img-fluid flex-shrink-0 rounded" style="width: 45px; height: 45px;">
 
@@ -345,7 +345,7 @@
 
                     <!-- 5th -->
                     <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Hi, I'm <a href="https://www.facebook.com/profile.php?id=100057128943349" target="_blank">Tanha Tarannum</a>. I'm a professional Frontend Developer. I'm study in Computer Technology at LPI.</p>
+                        <p>Ai integration is very good. It helps a lot in finding blood donors.</p>
                         <div class="d-flex align-items-center">
                             <img src="img/tanha.jpg" alt="images" class="img-fluid flex-shrink-0 rounded" style="width: 45px; height: 45px;">
 
@@ -361,7 +361,7 @@
 
                     <!-- 6th -->
                     <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Hi, I'm <a href="https://www.facebook.com/profile.php?id=100083708364998" target="_blank">Hasan Sahriyar</a>. I'm a professional Graphic Designer. I'm a student of Lakshmipur Polytechnic Institute.</p>
+                        <p>Blood donation app is very useful. It helps people in need of blood to find donors quickly.</p>
                         <div class="d-flex align-items-center">
                             <img src="img/hasan.jpg" alt="images" class="img-fluid flex-shrink-0 rounded" style="width: 45px; height: 45px;">
 
@@ -376,7 +376,7 @@
 
                     <!-- 7th -->
                     <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Hi, I am <a href="https://www.facebook.com/yeasin.arafat.bhuiya.108" target="_blank">Yeasin Arafat</a>. I'm a professional frontend developer. I'm currently studying in Computer Technology at LPI.</p>
+                        <p>রক্ত প্রয়োজন হলে এই অ্যাপ্লিকেশনটি খুবই সহায়ক। অনেক তথ্যবহুল একটি অ্যাপ</p>
                         <div class="d-flex align-items-center">
                             <img src="img/yeasisn.jpeg" alt="images" class="img-fluid flex-shrink-0 rounded" style="width: 45px; height: 45px;">
 
@@ -391,7 +391,7 @@
 
                     <!-- 8th -->
                     <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Hi, I am <a href="https://www.facebook.com/gazi.nahid2004" target="_blank">Naifur Rahman Nahid</a>. I'm a professional Frontend Developer. I'm currently studying in Computer Technology at LPI.</p>
+                        <p>আমি এই অ্যাপের মাধ্যমে ব্লাড ডোনেট করেছি। খুবই সহায়ক একটি অ্যাপ</p>
                         <div class="d-flex align-items-center">
                             <img src="img/nahid.jpg" alt="images" class="img-fluid flex-shrink-0 rounded" style="width: 45px; height: 45px;">
 
@@ -413,15 +413,41 @@
         <div class="container-xxl py-5" id="team">
             <div class="container">
                 <div class="text-center wow fadeInUp">
-                    <h6 class="section-title text-center text-primary text-uppercase">Our Teacher</h6>
-                    <h1 class="mb-5">People Who <span class="text-primary text-uppercase">inspired</span> Us</h1>
+                    
+                    <h1 class="mb-5">People Who <span class="text-primary text-uppercase">Worked</span> On This Project</h1>
                 </div>
                 <div class="row g-4">
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp">
                         <div class="rounded shadow overflow-hidden">
                             <div class="position-relative">
-                                <img src="img/principal.jpg" alt="images" class="img-fluid">
+                                <img src="img/Sohag.jpg" alt="images" class="img-fluid h-100 w-100">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a href="https://www.facebook.com/programmer.sohaghosen" class="btn btn-primary btn-square mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://twitter.com/sohag_sosen" class="btn btn-primary btn-square mx-1">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/@Hi-TechIT-ks8gx" class="btn btn-primary btn-square mx-1">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-square mx-1">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-2">
+                                <h5 class="mb-0 fw-bold pt-2">Sohag Hossen</h5>
+                                <small>Main Leader</small>
+                                <p>Project Idea generator and First developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="rounded shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="img/saddam sir.enc" alt="images" class="img-fluid" style="height: 400px;">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a href="#" class="btn btn-primary btn-square mx-1">
                                         <i class="fab fa-facebook-f"></i>
@@ -438,35 +464,9 @@
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-2">
-                                <h5 class="mb-0 fw-bold pt-2">MD Jahirul Islam</h5>
-                                <small>Principal (In Charge)</small>
-                                <p>Lakshmipur Polytechnic Institute</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp">
-                        <div class="rounded shadow overflow-hidden">
-                            <div class="position-relative">
-                                <img src="img/musfik.jpg" alt="images" class="img-fluid">
-                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a href="#" class="btn btn-primary btn-square mx-1">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-primary btn-square mx-1">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-primary btn-square mx-1">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-primary btn-square mx-1">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="text-center p-4 mt-2">
-                                <h5 class="mb-0 fw-bold">Abu Fateh Mohammad Musfikur Rahman</h5>
-                                <small>Cheif Instructor - CST</small>
-                                <p>Lakshmipur Polytechnic Institute</p>
+                                <h5 class="mb-0 fw-bold">Saddam Hossain</h5>
+                                <small>Support Teacher</small>
+                                <p>Our Mentor and support teacher</p>
                             </div>
                         </div>
                     </div>
@@ -475,7 +475,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp">
                         <div class="rounded shadow overflow-hidden">
                             <div class="position-relative">
-                                <img src="img/Khaled-sir.jpg" alt="images" class="img-fluid">
+                                <img src="img/asif.jpeg" alt="images" class="img-fluid">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a href="https://www.facebook.com/khaled.sudon" target="_blank" class="btn btn-primary btn-square mx-1">
                                         <i class="fab fa-facebook-f"></i>
@@ -492,9 +492,9 @@
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="mb-0 fw-bold">Khaled Hossain</h5>
-                                <small>Instructor - CST</small>
-                                <p>Lakshmipur Polytechnic Institute</p>
+                                <h5 class="mb-0 fw-bold">Asiful Mowla</h5>
+                                <small>Junior Developer</small>
+                                <p>Second developer. Developed and added some feature</p>
 
                             </div>
                         </div>
@@ -503,7 +503,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp">
                         <div class="rounded shadow overflow-hidden">
                             <div class="position-relative">
-                                <img src="img/maruf-sir.jfif" alt="images" class="img-fluid">
+                                <img src="img/jihad.jpeg" alt="images" class="img-fluid">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a href="#" class="btn btn-primary btn-square mx-1">
                                         <i class="fab fa-facebook-f"></i>
@@ -520,9 +520,9 @@
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="mb-0 fw-bold">Maruf Hossain</h5>
-                                <small>Instructor - CST</small>
-                                <p>Lakshmipur Polytechnic Institute</p>
+                                <h5 class="mb-0 fw-bold">Abdullah Al Mahbub Jihad</h5>
+                                <small>Logistic</small>
+                                <p>Designer And Logistic support</p>
                             </div>
                         </div>
                     </div>

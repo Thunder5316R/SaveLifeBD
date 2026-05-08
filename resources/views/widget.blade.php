@@ -268,7 +268,7 @@
     <div id="chat-header">
         <div class="avatar">🩸</div>
         <div class="info">
-            <div class="name">LPI Blood Bank AI</div>
+            <div class="name">Save Life BD AI</div>
             <div class="status">সর্বদা সক্রিয় (24/7)</div>
         </div>
         <button id="chat-close" onclick="toggleChat()">×</button>
@@ -278,7 +278,7 @@
     <div id="chat-messages">
         {{-- Welcome message (static) --}}
         <div class="msg bot">
-            স্বাগতম! 🩸 আমি LPI Blood Bank এর AI assistant।<br><br>
+            স্বাগতম! 🩸 আমি Save Life BD এর AI assistant।<br><br>
             আপনি কি blood donor খুঁজছেন? অথবা blood donation সম্পর্কে জানতে চান?
         </div>
 

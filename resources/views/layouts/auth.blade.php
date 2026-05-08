@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Auth') | Blood App</title>
+    {{-- favicon --}}
+    <link href="{{ asset('blood-donation.png') }}" rel="icon">
     <!-- Bootstrap 5 CSS -->
     <link href="{{ asset('auth/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Font Awesome for icons -->

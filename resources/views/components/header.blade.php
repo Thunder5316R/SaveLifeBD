@@ -7,7 +7,7 @@
 
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">LPI - Blood Bank</h6>
+                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Save Life BD</h6>
                                 <h1 class="display-3 text-white animated mb-4 slideInDown">Want to help save lives?</h1>
                                 <!-- button -->
                                 <a href="/sign-up" class="btn btn-primary py-md-3 px-md-5 animated slideInRight me-3">Become a Donar</a>
@@ -21,7 +21,7 @@
 
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">LPI - Blood Bank</h6>
+                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Save Life BD</h6>
                                 <h1 class="display-4 text-white mb-4 animated slideInDown">Then "donate blood" to the fainting patient.</h1>
                                 <!-- button -->
                                 <a href="doner.php" class="btn btn-primary py-md-3 px-md-5 animated slideInRight me-3">Become a Donar</a>

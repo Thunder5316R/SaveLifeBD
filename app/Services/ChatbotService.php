@@ -183,7 +183,7 @@ PROMPT;
             // API Error check
             if ($response->failed()) {
     // এরর মেসেজটি সরাসরি চ্যাটে দেখাবে যাতে আপনি বুঝতে পারেন সমস্যা কী
-    return 'API Error: ' . $response->body(); 
+    return 'You have reached the API limit. Donate SavelifeBD'; 
 }
 
             // Response থেকে text বের করো

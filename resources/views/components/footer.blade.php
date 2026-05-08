@@ -22,14 +22,14 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="bg-primary rounded p-4">
                             <a href="#">
-                                <h1 class="text-white text-uppercase mb-3" style="font-size: 25px;">LPI Blood Bank
+                                <h1 class="text-white text-uppercase mb-3" style="font-size: 25px;">Save Life BD
                                 <span style="font-size: 9px;" class="d-block text-white">Lakshmipur Polytechnic Institute</span>
                                 </h1>
                             </a>
 
                             <p class="text-white mb-0">
-                                Download <a href="#" class="text-dark fw-medium">LPI Blood Bank - Premium Version</a>
-                                Use our LPI Blood Bank app on your mobile phone and contact us for any need. Thank you for visiting my website!
+                                Download our App <a href="#" class="text-dark fw-medium">Save Life BD - App</a>
+                                Use our Save Life BD app on your mobile phone and contact us for any need. Thank you for visiting my website!
                             </p>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                         <div class="row gy-5 g-4">
 
                             <div class="col-md-6">
-                                <h6 class="section-title text-start text-primary text-uppercase mb-4">LPI Blood Blank</h6>
+                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Save Life BD</h6>
                                 <a href="/about" class="btn btn-link">About Us</a>
                                 <a href="/contact" class="btn btn-link">Contact Us</a>
                                 <a href="#" class="btn btn-link">Privacy Policy</a>
@@ -83,7 +83,7 @@
                                 <a href="https://www.facebook.com/groups/669389887932317" target="_blank" class="btn btn-link">LPI - Blood Group</a>
                                 <a href="https://www.facebook.com/socialdevelopmentsociety.bd" target="_blank" class="btn btn-link">Social Development Society</a>
                                 <a href="https://www.facebook.com/profile.php?id=100053884909865" target="_blank" class="btn btn-link">Adorsho Torun Sproting Club</a>
-                                <a href="https://www.facebook.com/lpibloodbank" target="_blank" class="btn btn-link">LPI Blood Bank</a>
+                                <a href="https://www.facebook.com/lpibloodbank" target="_blank" class="btn btn-link">Save Life BD</a>
                             </div>
                             
                         </div>
@@ -97,7 +97,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a href="#" class="border-bottom">LPI - Blood Bank,</a> All Right Reserved. Developed By <a href="https://www.facebook.com/programmer.sohaghosen" target="_blank" class="border-bottom">Sohag Hosen</a>
+                            &copy; <a href="#" class="border-bottom">Save Life BD,</a> All Right Reserved. Developed By <a href="https://www.facebook.com/programmer.sohaghosen" target="_blank" class="border-bottom">Sohag Hosen</a>
                         </div>
 
                         <div class="col-md-6 text-center text-md-end">

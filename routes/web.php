@@ -42,6 +42,13 @@ Route::get('/contact', function() {
 Route::get('/ai', function() {
     return view('ai-recommend');
 });
+Route::get('/terms', function() {
+    return view('terms');
+});
+Route::get('/privacy', function() {
+    return view('privacy');
+});
+
 
 Route::get('/search',    [BloodSearchController::class, 'search'])->name('blood.search');
 Route::get('/ai-recommend', [BloodSearchController::class, 'recommend'])->name('blood.recommend');

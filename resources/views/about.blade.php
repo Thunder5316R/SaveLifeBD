@@ -18,8 +18,8 @@
                         <h6 class="section-title text-start text-primary text-uppercase">
                             About us
                         </h6>
-                        <h1 class="mb-4" style="font-size: 35px;">Welcome to <span class="text-primary text-uppercase">LPI Blood Bank</span></h1>
-                        <p class="mb-2">Our work of LPI Blood Bank is to serve the helpless people. We are bringing a huge opportunity to those who cannot arrange blood for their close relatives due to lack of blood donors. Users can easily find their nearest donor by using our website. We have here the list of all blood warriors of the country. Those who willingly donate their precious blood. We are here with 100+ Blood Donation Organizations. They always help people to donate blood using our website.</p>
+                        <h1 class="mb-4" style="font-size: 35px;">Welcome to <span class="text-primary text-uppercase">Save Life BD</span></h1>
+                        <p class="mb-2">Our work of Save Life BD is to serve the helpless people. We are bringing a huge opportunity to those who cannot arrange blood for their close relatives due to lack of blood donors. Users can easily find their nearest donor by using our website. We have here the list of all blood warriors of the country. Those who willingly donate their precious blood. We are here with 100+ Blood Donation Organizations. They always help people to donate blood using our website.</p>
                         <p class="mb-2">This website is created by us 4th phase 1st shift students of computer department of Lakshmipur Polytechnic Institute.</p>
                         <p class="mb2">You can easily find your nearest blood donor by submitting the blood group, patient name, blood donation date, mobile number and where the blood is required. It is our responsibility to send the blood donor's name, mobile number, photo and address to you. which will reach the satellite within a few seconds.</p>
                         <p>Hopefully, no one from here will die empty-handed without a blood donar. <a href="img/thankyou.gif" target="_blank">Thank you!</a></p>

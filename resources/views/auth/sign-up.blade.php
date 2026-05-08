@@ -251,7 +251,7 @@
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="terms" required>
                         <label class="form-check-label" for="terms">
-                            I agree to the <a href="#" class="text-decoration-none">Terms & Conditions</a> and <a href="#" class="text-decoration-none">Privacy Policy</a>
+                            I agree to the <a href="/terms" class="text-decoration-none">Terms & Conditions</a> and <a href="/privacy" class="text-decoration-none">Privacy Policy</a>
                         </label>
                         <div class="invalid-feedback">You must agree to the terms and conditions.</div>
                     </div>

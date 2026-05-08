@@ -397,7 +397,7 @@
                     <span>🏥</span> রোগীর তথ্য
                 </div>
 
-                <div class="em-row col-6">
+                <div class="em-row col-12">
                     <div class="em-field">
                         <label><span class="icon">👤</span> রোগীর নাম <span class="req">*</span></label>
                         <input type="text" name="patient_name"
@@ -408,7 +408,7 @@
                     </div>
                 </div>
 
-                <div class="em-row col-6">
+                <div class="em-row col-12">
                     <div class="em-field">
                         <label><span class="icon">🏨</span> হাসপাতাল <span class="req">*</span></label>
                         <input type="text" name="hospital_name"

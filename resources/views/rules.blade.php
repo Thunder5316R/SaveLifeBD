@@ -19,7 +19,7 @@
                             Rules
                 </h5>
                 <marquee class="mb-4 bg-primary" behavior="scroll">
-                    <h4 class="p-2 text-white">(Ensure your safety. <strong>www.LPIbloodbank.com</strong> authority will not be responsible for any inconvenience.)</h4>
+                    <h4 class="p-2 text-white">If you face any problem, please contact us. Call In this contact number: +8801745513701</h4>
                 </marquee>
 
 
@@ -104,7 +104,7 @@
 
 
             <div class="text-center wow fadeInUp">
-                <h6 class="section-title text-center text-primary text-uppercase">LPI - Blood Bank</h6>
+                <h6 class="section-title text-center text-primary text-uppercase">Save Life BD</h6>
                 <h1 class="mb-5">Blood Donation<span class="text-primary text-uppercase">Warning! </span>⚠</h1>
             </div>
 

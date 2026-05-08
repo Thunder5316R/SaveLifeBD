@@ -2,7 +2,7 @@
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
                     <a href="/home" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center" id="bottom-icon">
-                        <h1 class="m-0 text-primary text-uppercase" style="font-size: 25px;">LPI Blood Bank
+                        <h1 class="m-0 text-primary text-uppercase" style="font-size: 25px;">Save Life BD
                             <span style="font-size: 9px;" class="d-block">Lakshmipur Polytechnic Institute</span>
                         </h1>
                         <!-- <img src="img/logo.png" alt=".." class="img-fluid" style="width: 130px; height: 75px;"> -->
