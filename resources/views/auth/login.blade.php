@@ -4,7 +4,7 @@
 @section('content')
     <div class="login-card">
         <div class="login-header">
-            <h2>Welcome To Blood App</h2>
+            <h2>Welcome To SaveLifeBD</h2>
             <p>Sign in to your account to continue</p>
         </div>
 
@@ -46,7 +46,7 @@
                         <input type="checkbox" name="remember_me" class="form-check-input" id="rememberMe">
                         <label class="form-check-label" for="rememberMe">Remember me</label>
                     </div>
-                    <a href="#" class="text-decoration-none">Forgot password?</a>
+                    {{-- <a href="#" class="text-decoration-none">Forgot password?</a> --}}
                 </div>
                 
                 <button type="submit" class="btn-login">
@@ -54,7 +54,7 @@
                 </button>
             </form>
             
-            <div class="divider">
+            {{-- <div class="divider">
                 <span>Or continue with</span>
             </div>
             
@@ -68,7 +68,7 @@
                 <a href="#" class="social-btn twitter">
                     <i class="fab fa-twitter"></i>
                 </a>
-            </div>
+            </div> --}}
             
             <div class="login-footer">
                 <p>Don't have an account? <a href="{{ route('user.signup') }}">Sign up here</a></p>

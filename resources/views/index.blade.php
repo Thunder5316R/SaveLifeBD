@@ -281,7 +281,7 @@
                 <div class="owl-carousel testimonial-carousel py-5" style="display: block;">
 
                     <!-- 1st -->
-                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                    {{-- <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
                         <p>This Application is very helpful for finding blood. Very good job.</p>
                         <div class="d-flex align-items-center">
                             <img src="img/Sohag.jpg" alt="images" class="img-fluid flex-shrink-0 rounded" style="width: 45px; height: 45px;">
@@ -293,7 +293,7 @@
                         </div>
 
                         <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-                    </div>
+                    </div> --}}
 
 
                     <!-- 2nd -->
@@ -408,7 +408,12 @@
             </div>
         </div>
 
-
+<style>
+    #team .position-relative img{
+        height: 300px !important;
+        width: 100% !important;
+    }
+</style>
         <!-- ============= Team Section ============ -->
         <div class="container-xxl py-5" id="team">
             <div class="container">
@@ -421,7 +426,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp">
                         <div class="rounded shadow overflow-hidden">
                             <div class="position-relative">
-                                <img src="img/Sohag.jpg" alt="images" class="img-fluid h-100 w-100">
+                                <img src="img/sohag-hosen.jpg" alt="images" class="img-fluid h-100 w-100">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a href="https://www.facebook.com/programmer.sohaghosen" class="btn btn-primary btn-square mx-1">
                                         <i class="fab fa-facebook-f"></i>

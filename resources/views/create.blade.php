@@ -345,7 +345,7 @@
             </svg>
         </div>
         <h1>Emergency <span>Blood</span> Request</h1>
-        <p>AI স্বয়ংক্রিয়ভাবে সেরা ৫ জন উপযুক্ত donor খুঁজে SMS পাঠাবে</p>
+        <p>AI স্বয়ংক্রিয়ভাবে সেরা ৫ জন উপযুক্ত donor খুঁজে Message পাঠাবে</p>
     </div>
 
     {{-- ── STEP INDICATORS ── --}}
@@ -354,13 +354,13 @@
             <span class="step-num">১</span>
             তথ্য দিন
         </div>
-        <div class="em-step">
+        <div class="em-step active">
             <span class="step-num">২</span>
             AI খোঁজে
         </div>
-        <div class="em-step">
+        <div class="em-step active">
             <span class="step-num">৩</span>
-            SMS যায়
+            Message যায়
         </div>
     </div>
 
@@ -368,14 +368,41 @@
     <div class="em-card">
 
         {{-- Alerts --}}
+
         @if(session('success'))
         <div class="em-alert success">
-            <span>✅</span> {{ session('success') }}
+            <span></span>
+            <div>{{ session('success') }}</div>
         </div>
         @endif
+
         @if(session('warning'))
         <div class="em-alert warning">
-            <span>⚠️</span> {{ session('warning') }}
+            <span></span>
+            <div>{{ session('warning') }}</div>
+        </div>
+        @endif
+
+        @if(session('error'))
+        <div class="em-alert error">
+            <span></span>
+            <div>{{ session('error') }}</div>
+        </div>
+        @endif
+
+        @if ($errors->any())
+        <div class="em-alert error">
+            <span></span>
+
+            <div>
+                <strong>Validation Failed!</strong>
+
+                <ul style="margin:8px 0 0 18px; padding:0;">
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
         @endif
 
@@ -388,7 +415,7 @@
                     <span class="icon">🤖</span>
                     <p>
                         <strong>AI Priority System:</strong> আপনার Blood Group, জেলা এবং সর্বশেষ donation date অনুযায়ী
-                        সবচেয়ে উপযুক্ত <strong>৫ জন donor</strong> কে স্বয়ংক্রিয়ভাবে SMS পাঠানো হবে।
+                        সবচেয়ে উপযুক্ত <strong>৫ জন donor</strong> কে স্বয়ংক্রিয়ভাবে Message পাঠানো হবে।
                     </p>
                 </div>
 
@@ -400,7 +427,7 @@
                 <div class="em-row col-12">
                     <div class="em-field">
                         <label><span class="icon">👤</span> রোগীর নাম <span class="req">*</span></label>
-                        <input type="text" name="patient_name"
+                        <input type="text" required name="patient_name"
                             placeholder="রোগীর পুরো নাম লিখুন"
                             value="{{ old('patient_name') }}"
                             class="{{ $errors->has('patient_name') ? 'is-invalid' : '' }}">
@@ -411,7 +438,7 @@
                 <div class="em-row col-12">
                     <div class="em-field">
                         <label><span class="icon">🏨</span> হাসপাতাল <span class="req">*</span></label>
-                        <input type="text" name="hospital_name"
+                        <input type="text" name="hospital_name" required
                             placeholder="হাসপাতালের নাম ও ঠিকানা"
                             value="{{ old('hospital_name') }}"
                             class="{{ $errors->has('hospital_name') ? 'is-invalid' : '' }}">
@@ -419,7 +446,7 @@
                     </div>
                     <div class="em-field">
                         <label><span class="icon">📞</span> যোগাযোগ নম্বর <span class="req">*</span></label>
-                        <input type="text" name="contact_number"
+                        <input type="text" name="contact_number" required
                             placeholder="01XXXXXXXXX"
                             value="{{ old('contact_number') }}"
                             class="{{ $errors->has('contact_number') ? 'is-invalid' : '' }}">
@@ -438,7 +465,7 @@
                     <label><span class="icon">🔴</span> রক্তের গ্রুপ বেছে নিন <span class="req">*</span></label>
                     <div class="blood-grid">
                         @foreach(['A+','A-','B+','B-','AB+','AB-','O+','O-'] as $g)
-                        <input type="radio" name="blood_group" value="{{ $g }}"
+                        <input type="radio" name="blood_group" required value="{{ $g }}"
                             id="bg_{{ str_replace('+','p',str_replace('-','m',$g)) }}"
                             class="blood-opt"
                             {{ old('blood_group') == $g ? 'checked' : '' }}>
@@ -452,7 +479,7 @@
                     <div class="em-field">
                         <label><span class="icon">📍</span> জেলা <span class="req">*</span></label>
                         <div class="em-select-wrap">
-                            <select name="district" class="{{ $errors->has('district') ? 'is-invalid' : '' }}">
+                            <select name="district" required class="{{ $errors->has('district') ? 'is-invalid' : '' }}">
                                 <option value="">-- জেলা বেছে নিন --</option>
                                 @foreach($districts as $d)
                                 <option value="{{ $d }}" {{ old('district')==$d ? 'selected':'' }}>{{ $d }}</option>
@@ -465,7 +492,7 @@
                         <label><span class="icon">🩺</span> কত ব্যাগ লাগবে <span class="req">*</span></label>
                         <div class="counter-wrap">
                             <button type="button" class="counter-btn" onclick="changeCount(-1)">−</button>
-                            <input type="number" name="units_needed" id="unitsCount"
+                            <input type="number" required name="units_needed" id="unitsCount"
                                 value="{{ old('units_needed', 1) }}" min="1" max="10" readonly>
                             <button type="button" class="counter-btn" onclick="changeCount(1)">+</button>
                         </div>
@@ -488,11 +515,11 @@
                 {{-- SUBMIT --}}
                 <button type="submit" class="em-submit" id="submitBtn">
                     <span class="spinner" id="spinner"></span>
-                    <span id="btnText">🚨 Emergency Alert পাঠান</span>
+                    <span id="btnText" class="text-white">🚨 Emergency Alert পাঠান</span>
                 </button>
 
                 <p class="em-note">
-                    Submit এর পর AI <span>৩০ সেকেন্ডের</span> মধ্যে উপযুক্ত donor দের SMS করবে
+                    Submit এর পর AI <span>৩০ সেকেন্ডের</span> মধ্যে উপযুক্ত donor দের Message করবে
                 </p>
 
             </div>

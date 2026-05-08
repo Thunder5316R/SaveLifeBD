@@ -23,7 +23,7 @@
             <strong>🤖 Try AI Recommendation!</strong>
             Smart donor matching by blood group, location & eligibility.
         </div>
-        <a href="{{ route('blood.recommend') }}" class="btn btn-danger btn-sm">Use AI →</a>
+        <a href="/ai" class="btn btn-danger btn-sm">Use AI →</a>
     </div>
 </div>
 

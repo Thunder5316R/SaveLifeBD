@@ -9,10 +9,21 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    public function login(){
+    public function login()
+    {
+        if (auth()->check()) {
+            return redirect()->route('home');
+        }
+
         return view('auth.login');
     }
-    public function signup(){
+
+    public function signup()
+    {
+        if (auth()->check()) {
+            return redirect()->route('home');
+        }
+
         return view('auth.sign-up');
     }
     public function signupStore(Request $request){
@@ -90,5 +101,15 @@ class AuthController extends Controller
         ]);
 
         return redirect()->route('home')->with('success', 'Login successful!');
+    }
+
+    public function logout()
+    {
+        auth()->logout();
+
+        request()->session()->invalidate();
+        request()->session()->regenerateToken();
+
+        return redirect('/');
     }
 }

@@ -9,10 +9,10 @@ use Illuminate\Support\Facades\Auth;
 
 class EmergencyController extends Controller
 {
-    // public function __construct(private BloodDonorMatchService $matchService)
-    // {
-    //     $this->middleware('auth');
-    // }
+    public function __construct(private BloodDonorMatchService $matchService)
+    {
+        $this->middleware('auth');
+    }
 
     /**
      * Emergency request form দেখাও
@@ -58,7 +58,7 @@ class EmergencyController extends Controller
         ]);
 
         $message = $result['donors_notified'] > 0
-            ? "✅ সফল! {$result['donors_notified']} জন donor কে SMS পাঠানো হয়েছে।"
+            ? "✅ সফল! {$result['donors_notified']} জন donor কে Email পাঠানো হয়েছে।"
             : "⚠️ দুঃখিত! আপনার criteria অনুযায়ী এই মুহূর্তে কোনো donor পাওয়া যায়নি।";
 
         return redirect()->back()->with(

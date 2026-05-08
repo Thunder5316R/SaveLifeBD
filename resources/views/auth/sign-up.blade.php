@@ -14,7 +14,7 @@
 
         <!-- Left Side - Visual & Information -->
         <div class="auth-visual">
-            <h2>Join <span>Blood App</span> ❤️</h2>
+            <h2>Join <span>SaveLifeBD</span> ❤️</h2>
             <p>Create your account and become a life-saver in our community of donors.</p>
             
             <ul class="features-list">

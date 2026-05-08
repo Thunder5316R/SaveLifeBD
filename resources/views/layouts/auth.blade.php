@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Auth') | Blood App</title>
+    <title>@yield('title', 'Auth') | SaveLifeBD</title>
     {{-- favicon --}}
     <link href="{{ asset('blood-donation.png') }}" rel="icon">
     <!-- Bootstrap 5 CSS -->

@@ -4,13 +4,12 @@ namespace App\Services;
 
 use App\Models\User;
 use Carbon\Carbon;
-use Twilio\Rest\Client;
+use Illuminate\Support\Facades\Mail;
 
 class BloodDonorMatchService
 {
     /**
-     * Blood group compatibility chart
-     * key = রোগীর blood group, value = যারা দিতে পারবে
+     * Blood compatibility chart
      */
     private array $compatibilityChart = [
         'A+'  => ['A+', 'A-', 'O+', 'O-'],
@@ -24,36 +23,41 @@ class BloodDonorMatchService
     ];
 
     /**
-     * যোগ্য donor খুঁজে বের করো এবং SMS পাঠাও
+     * Find suitable donors and send email notifications
      */
     public function findAndNotifyDonors(array $requestData): array
     {
-        $compatibleGroups = $this->compatibilityChart[$requestData['blood_group']] ?? [$requestData['blood_group']];
+        $compatibleGroups = $this->compatibilityChart[$requestData['blood_group']]
+            ?? [$requestData['blood_group']];
 
-        // AI Priority Logic:
-        // 1. Blood group match
-        // 2. Same district
-        // 3. Last donation ৩ মাস আগে (শরীর recover করেছে)
-        // 4. সবচেয়ে বেশি দিন আগে donate করেছে তাকে priority দাও
-
+        // Same district priority
         $donors = User::whereIn('blood_group', $compatibleGroups)
             ->where('district', $requestData['district'])
-            ->where('is_donor', true)          // donors table বা users এ is_donor column থাকলে
+            ->where('is_donor', true)
             ->where(function ($query) {
                 $query->whereNull('last_blood_donate')
-                      ->orWhere('last_blood_donate', '<=', Carbon::now()->subMonths(3));
+                    ->orWhere(
+                        'last_blood_donate',
+                        '<=',
+                        Carbon::now()->subMonths(3)
+                    );
             })
-            ->orderBy('last_blood_donate', 'asc') // সবচেয়ে আগে donate করেছে তাকে আগে
+            ->orderBy('last_blood_donate', 'asc')
             ->limit(5)
             ->get();
 
+        // যদি same district এ donor না পাওয়া যায়
         if ($donors->isEmpty()) {
-            // Same district এ না পেলে সারা দেশ থেকে খোঁজো
+
             $donors = User::whereIn('blood_group', $compatibleGroups)
                 ->where('is_donor', true)
                 ->where(function ($query) {
                     $query->whereNull('last_blood_donate')
-                          ->orWhere('last_blood_donate', '<=', Carbon::now()->subMonths(3));
+                        ->orWhere(
+                            'last_blood_donate',
+                            '<=',
+                            Carbon::now()->subMonths(3)
+                        );
                 })
                 ->orderBy('last_blood_donate', 'asc')
                 ->limit(5)
@@ -61,12 +65,20 @@ class BloodDonorMatchService
         }
 
         $notifiedIds = [];
-        $smsResults  = [];
+        $mailResults = [];
 
         foreach ($donors as $donor) {
-            if (!empty($donor->phone)) {
-                $result = $this->sendSms($donor->phone, $requestData, $donor->name);
-                $smsResults[] = $result;
+
+            if (!empty($donor->email)) {
+
+                $result = $this->sendMail(
+                    $donor->email,
+                    $requestData,
+                    $donor->name
+                );
+
+                $mailResults[] = $result;
+
                 if ($result['success']) {
                     $notifiedIds[] = $donor->id;
                 }
@@ -77,42 +89,189 @@ class BloodDonorMatchService
             'donors_found'    => $donors->count(),
             'donors_notified' => count($notifiedIds),
             'notified_ids'    => $notifiedIds,
-            'sms_results'     => $smsResults,
+            'mail_results'    => $mailResults,
         ];
     }
 
     /**
-     * Twilio দিয়ে SMS পাঠাও
+     * Send beautiful emergency email
      */
-    private function sendSms(string $phone, array $requestData, string $donorName): array
-    {
+    private function sendMail(
+        string $email,
+        array $requestData,
+        string $donorName
+    ): array {
+
         try {
-            $twilio = new Client(
-                config('services.twilio.sid'),
-                config('services.twilio.token')
-            );
 
-            $message = "🚨 EMERGENCY BLOOD REQUEST\n"
-                . "প্রিয় {$donorName},\n"
-                . "রোগী: {$requestData['patient_name']}\n"
-                . "Blood Group: {$requestData['blood_group']}\n"
-                . "হাসপাতাল: {$requestData['hospital_name']}, {$requestData['district']}\n"
-                . "যোগাযোগ: {$requestData['contact_number']}\n"
-                . "আপনার রক্তদান একটি জীবন বাঁচাতে পারে!\n"
-                . "— LPI Blood Bank";
+            $html = '
+            <div style="font-family: Arial, sans-serif; background:#f4f4f4; padding:30px;">
 
-            $twilio->messages->create(
-                '+88' . ltrim($phone, '0'), // BD number format
-                [
-                    'from' => config('services.twilio.from'),
-                    'body' => $message,
-                ]
-            );
+                <div style="
+                    max-width:600px;
+                    margin:auto;
+                    background:#ffffff;
+                    border-radius:10px;
+                    overflow:hidden;
+                    box-shadow:0 0 15px rgba(0,0,0,0.1);
+                ">
 
-            return ['success' => true, 'phone' => $phone];
+                    <div style="
+                        background:#dc3545;
+                        color:#ffffff;
+                        padding:25px;
+                        text-align:center;
+                    ">
+                        <h1 style="margin:0;">
+                            🚨 Emergency Blood Request
+                        </h1>
+                    </div>
+
+                    <div style="padding:30px; color:#333333;">
+
+                        <h2>
+                            Dear ' . $donorName . ',
+                        </h2>
+
+                        <p style="font-size:16px; line-height:1.8;">
+                            A patient urgently needs blood donation assistance.
+                            Your blood group matches the requirement.
+                        </p>
+
+                        <table style="
+                            width:100%;
+                            border-collapse:collapse;
+                            margin-top:20px;
+                        ">
+
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    <strong>Patient Name</strong>
+                                </td>
+
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    ' . $requestData['patient_name'] . '
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    <strong>Blood Group</strong>
+                                </td>
+
+                                <td style="
+                                    padding:12px;
+                                    border:1px solid #ddd;
+                                    color:#dc3545;
+                                    font-weight:bold;
+                                ">
+                                    ' . $requestData['blood_group'] . '
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    <strong>Hospital</strong>
+                                </td>
+
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    ' . $requestData['hospital_name'] . '
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    <strong>District</strong>
+                                </td>
+
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    ' . $requestData['district'] . '
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    <strong>Contact Number</strong>
+                                </td>
+
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    ' . $requestData['contact_number'] . '
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    <strong>Units Needed</strong>
+                                </td>
+
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    ' . $requestData['units_needed'] . '
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <div style="
+                            margin-top:30px;
+                            padding:20px;
+                            background:#fff3cd;
+                            border-left:5px solid #ffc107;
+                            border-radius:5px;
+                        ">
+                            ❤️ Your blood donation can save a life.
+                            Please respond as soon as possible.
+                        </div>
+
+                        <div style="margin-top:30px; text-align:center;">
+                            <a href="tel:' . $requestData['contact_number'] . '"
+                               style="
+                                    background:#dc3545;
+                                    color:#ffffff;
+                                    text-decoration:none;
+                                    padding:14px 30px;
+                                    border-radius:5px;
+                                    display:inline-block;
+                                    font-weight:bold;
+                               ">
+                                📞 Contact Now
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div style="
+                        background:#f8f9fa;
+                        padding:20px;
+                        text-align:center;
+                        color:#777;
+                        font-size:14px;
+                    ">
+                        © ' . date('Y') . ' LPI Blood Bank <br>
+                        Saving Lives Through Blood Donation ❤️
+                    </div>
+
+                </div>
+
+            </div>';
+
+            Mail::html($html, function ($message) use ($email) {
+
+                $message->to($email)
+                    ->subject('🚨 Emergency Blood Request - LPI Blood Bank');
+            });
+
+            return [
+                'success' => true,
+                'email'   => $email,
+            ];
 
         } catch (\Exception $e) {
-            return ['success' => false, 'phone' => $phone, 'error' => $e->getMessage()];
+
+            return [
+                'success' => false,
+                'email'   => $email,
+                'error'   => $e->getMessage(),
+            ];
         }
     }
 }

@@ -30,18 +30,18 @@
                                 <a href="https://www.facebook.com/groups/669389887932317" target="_blank" class="me-3">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#" class="me-3">
+                                {{-- <a href="#" class="me-3">
                                     <i class="fab fa-twitter"></i>
-                                </a>
+                                </a> --}}
                                 <a href="www.youtube.com" target="_blank" class="me-3">
                                     <i class="fab fa-youtube"></i>
                                 </a>
                                 <a href="https://www.linkedin.com/in/sohag-hosen-9535b4245/" target="_blank" class="me-3">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
-                                <a href="#" class="me-3">
+                                {{-- <a href="#" class="me-3">
                                     <i class="fab fa-instagram"></i>
-                                </a>
+                                </a> --}}
                                 <a id="google_element"></a>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
 
                     <nav class="navbar-expand-lg navbar bg-dark navbar-dark p-3 p-lg-0">
                         <a href="index.php" class="navbar-brand d-block d-lg-none">
-                            <h1 class="m-0 text-primary text-uppercase">LPI Blood</h1>
+                            <h1 class="m-0 text-primary text-uppercase">SaveLifeBD</h1>
                         </a>
                         <!-- button for responsive device -->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navs">
@@ -60,17 +60,28 @@
                         <!-- menu-items -->
                         <div class="collapse navbar-collapse justify-content-between" id="navs">
                             <div class="navbar-nav me-auto py-0 text-uppercase">
-                                <a href="/home" class="nav-link nav-item active">Home</a>
-                                <a href="{{ route('emergency.create') }}" class="btn btn-danger fw-bold nav-link nav-item active">
+                                <a href="/home" class="nav-link nav-item {{ request()->is('home') ? 'active' : '' }}">Home</a>
+                                <a href="{{ route('emergency.create') }}" class="btn btn-danger fw-bold nav-link nav-item {{ request()->is('emergency/create') ? 'active' : '' }}">
                                     🚨 Emergency Alert
                                 </a>
 
-                                <a href="/rules" class="nav-link nav-item">Rules</a>
-                                <a href="/blog" class="nav-link nav-item">Blogs</a>
+                                <a href="/rules" class="nav-link nav-item {{ request()->is('rules') ? 'active' : '' }}">Rules</a>
+                                <a href="/blog" class="nav-link nav-item {{ request()->is('blog') ? 'active' : '' }}">Blogs</a>
 
-                                <a href="/about" class="nav-link nav-item ">About</a>
-                                <a href="/contact" class="nav-link nav-item">Contact</a>
-                                <a href="/" class="nav-link nav-item">Login</a>
+                                <a href="/about" class="nav-link nav-item {{ request()->is('about') ? 'active' : '' }}">About</a>
+                                <a href="/contact" class="nav-link nav-item {{ request()->is('contact') ? 'active' : '' }}">Contact</a>
+                                @if(auth()->check())
+                                    <a href="{{ route('logout') }}" class="nav-link nav-item"
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        Logout
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                @else
+                                    <a href="/" class="nav-link nav-item {{ request()->is('/') ? 'active' : '' }}">Login</a>
+                                @endif
                             </div>
 
                             <!-- button -->
